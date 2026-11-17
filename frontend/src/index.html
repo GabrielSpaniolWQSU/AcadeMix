@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Gestão Acadêmica</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    .initial-screen{min-height:100vh;display:grid;place-items:center;margin:0;background:linear-gradient(135deg,#0c4a83,#2780ce);font-family:Segoe UI,Arial,sans-serif;color:#24334b}
+    .initial-card{width:min(430px,calc(100vw - 32px));padding:30px;background:#fff;border-radius:10px;box-shadow:0 18px 50px #072f5544}
+    .initial-card h1{margin:0 0 8px;color:#0c4a83}.initial-card p{line-height:1.5}.initial-card code{background:#eef3f8;padding:3px 6px;border-radius:4px}
+  </style>
+</head>
+<body class="initial-screen">
+  <app-root>
+    <div class="initial-card">
+      <h1>Gestão Acadêmica</h1>
+      <p id="initial-message">Carregando o sistema...</p>
+      <noscript>Ative o JavaScript para utilizar esta aplicação.</noscript>
+    </div>
+  </app-root>
+  <script>
+    if (location.protocol === 'file:') {
+      document.getElementById('initial-message').innerHTML =
+        'Este é um projeto Angular e não funciona abrindo o arquivo diretamente.<br><br>' +
+        'Inicie o front-end e acesse <code>http://localhost:4200</code>.';
+    }
+  </script>
+</body>
+</html>
